@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <script src="../bower_components/react/react.min.js"></script>
+    <script src="../bower_components/react/react-dom.min.js"></script>
+    <script src="../bower_components/babel/browser.min.js"></script>
 </head>
 <body>
-$END$
+<div id="example"></div>
+<script type="text/babel">
+    var names = ['LeeTeuk', 'SungMin', 'DongHae'];
+    ReactDOM.render(
+            <div>
+                {
+                    names.map(function (name) {
+                        return <div>Hello,{name}!</div>
+                    })
+                }
+            </div>,
+            document.getElementById('example')
+    );
+</script>
 </body>
 </html>

@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="build/react.min.js"></script>
-    <script src="build/react-dom.min.js"></script>
-    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <script src="./bower_components/react/react.min.js"></script>
+    <script src="./bower_components/react/react-dom.min.js"></script>
+    <script src="./bower_components/babel/browser.min.js"></script>
 </head>
 <body>
 <div id="example"></div>
 <script type="text/babel">
     class Example extends React.Component{
         render(){
-            return (
-                    <div>I am a component</div>
-            );
+            return <h1>Hello World</h1>
         }
     }
 
