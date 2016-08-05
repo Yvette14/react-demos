@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../bower_components/react/react.min.js"></script>
+    <script src="../bower_components/react/react-dom.min.js"></script>
+    <script src="../bower_components/babel/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+    let arr = [
+        <h1>Hello,World</h1>,
+        <h2>React is awesome</h2>
+    ];
+
+    ReactDOM.render(
+            <div>{arr}</div>,
+            document.getElementById('example')
+    );
+</script>
+</body>
+</html>
